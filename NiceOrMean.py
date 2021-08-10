@@ -54,7 +54,7 @@ def score(nice,mean,name):
     if nice > 2:
         win(nice,mean,name)
     if mean > 2:
-        lost(nice,mean,name)
+        lose(nice,mean,name)
     else:
         nice_mean(nice,mean,name)
         
@@ -65,7 +65,7 @@ def win(nice,mean,name):
 
 
 def lose(nice,mean,name):
-    print("\nAhhh roo bad, game over! \n(), you live in a dirty beat-up \nvan by the river, wrentched and alone!".format(name))
+    print("\nAhhh too bad, game over! \n(), you live in a dirty beat-up \nvan by the river, wrentched and alone!".format(name))
     again(nice,mean,name)
 
 
