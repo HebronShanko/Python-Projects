@@ -1,19 +1,40 @@
+
+# created parent class, with three attributes
+
 class Robot:
     name = 'Mac'
     color = 'Red'
     weight = 40
-
-# created class, with three attributes
-
+    
+    def machineInfo(self):
+        print(name)
+        
+           
+# child class with own attributes
 class read(Robot):
     IDname = 'readBot'
     size = 'small'
 
+    def readerBot(self):
+        print(size)
+
 class write(Robot):
     IDname = 'writeBot'
     flagcolor = 'black'
-    IDnumber = 55273557
+    IDnumber = '55273557'
 
-# child of class with own attributes
+    def writerBot(self):
+        print(flagcolor)
+
+        
+    
+
+
+
+
+
+
+
+
 
     
