@@ -6,14 +6,13 @@ class Robot:
 # created class, with three attributes
 
 class read(Robot):
-    name = 'readBot'
-    color = 'blue'
-    weight = 50
+    IDname = 'readBot'
+    size = 'small'
 
 class write(Robot):
-    name = 'writeBot'
-    color = 'black'
-    weight = 55
+    IDname = 'writeBot'
+    flagcolor = 'black'
+    IDnumber = 55273557
 
 # child of class with own attributes
 
