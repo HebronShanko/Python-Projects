@@ -21,12 +21,11 @@ def userInput(self):
                     """</h1>
                  </body> 
             </html>""")
+        file1.close()
     
     # Reading from file
-    with open("WebPageGenerator", "r") as file1:
-        print(file1.read())
 
-    webbrowser.open_new_tab("WebPageGenerator.html")
+    webbrowser.get("open -a /Applications/Google\ Chrome.app %s").open("WebPageGenerator.html")
 
 
 if __name__ == "__main__":
