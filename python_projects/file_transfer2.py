@@ -58,7 +58,7 @@ def SourceBrowse():
      
     #guide to find where users files are
     
-    browse = filedialog.askdirectory(initialdir ="/Users/Hebron/Desktop")
+    browse = filedialog.askdirectory(initialdir ="/Users/Hebron/Desktop/New Folder B")
      
     # Displaying the selected files in the root.sourceText
     # Entry using root.sourceText.insert()
@@ -67,33 +67,11 @@ def SourceBrowse():
 def DestinationBrowse():
     # which files are to be copied using the
    
-    destinationdirectory = filedialog.askdirectory(initialdir ="/Users/Hebron/Desktop")
+    destinationdirectory = filedialog.askdirectory(initialdir ="/Users/Hebron/Desktop/New Folder A")
     # show the directory
     
     root.destinationText.insert('0', destinationdirectory)
      
-def CopyFile():
-    # Retrieving the source file selected by the
-    # user in the SourceBrowse() and storing it in a
-    # variable named files_list
-    source_location = root.sourceText.get()
-    files_list = os.listdir(source_location)
-    
- 
-    # Retrieving the destination location
-   
-    destination_location = destinationLocation.get()
- 
-    # Looping through the files present in the list
-    for f in files_list:
-         
-        # Copying the file to the destination using
-        # the copy() of shutil module copy take the
-        # source file and the destination folder as
-        # the arguments
-        shutil.copy(f, destination_location)
- 
-    messagebox.showinfo("SUCCESSFULL")
      
 def MoveFile():
     # source directory
@@ -110,7 +88,7 @@ def MoveFile():
         todaysDate = datetime.datetime.now()
         modifyDateLimit = todaysDate - datetime.timedelta(days=1)
         if modifyDateLimit <= modifyDate:
-            shutil.copy2(full_path, desDir)
+            shutil.move(full_path, desDir)
             messagebox.showinfo("Successful")
     
      
