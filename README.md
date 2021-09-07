@@ -12,6 +12,9 @@ PROJECTS:
 
 
 NICE AND MEAN project is a fun and interactive game, where the user gives an input to given questions and scenrios. 
+
+
+
 FILE TRANSFER project allows users to select and move files to a differnt file directory. 
 
 
